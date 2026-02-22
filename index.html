@@ -22,10 +22,9 @@ What are you doing here?! you sneaky developer...
 -->
 
 <head>
- 
+
   <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWDE0VTD3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -35,18 +34,20 @@ What are you doing here?! you sneaky developer...
 
     gtag("config", "G-YMWDE0VTD3");
   </script>
-  
+
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#000" />
   <meta name="description"
-    content="Omkar Patil | Portfolio, Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
+    content="Omkar Patil | Portfolio, Visit and know me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
   <meta name="keywords"
     content="Omkar Patil,Omkar Patil portfolio,Omkar Patil Portfolio,Omkar Patil,Omkar Patil site,Omkar Patil Site,Omkar Patil me,Omkar Patil web,Omkar Patil github,Omkar Patil site,Omkar Patil uiverse,uiverse,Omkar Patil uiverse,Omkar Patil frontend developer,frontend developer,Omkar Patil latur,Omkar Patil" />
   <meta name="author" content="Omkar Patil" />
-  <meta property="og:image" content="hOmkar Patiljangid]]].site/src/png/Preview-card-min.png" />
+
+  <!-- <meta property="og:image" content="https://yourdomain.com/images/preview.png" /> -->
+
   <meta property="og:title" content="Omkar Patil | Portfolio" />
   <meta property="og:description"
     content="Hi! My name is Omkar. I'm a web developer and digital visual artist. Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
@@ -64,10 +65,11 @@ What are you doing here?! you sneaky developer...
   <!-- aos cdn -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- stylesheet -->
-  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="stylesheet" href="style.css" />
   <!-- google fonts-->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+</head>
 
 <body class="body">
   <audio loop="" id="audioPlayer" style="display: none">
@@ -89,25 +91,25 @@ What are you doing here?! you sneaky developer...
       </div>
       <div class="navbar-tabs" id="navbar-tabs">
         <ul class="navbar-tabs-ul">
-          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+          <li class="home activeThistab navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
             <a href="#home" tabindex="0" aria-label="Home menu button">
               &#60;/Home&#62;
             </a>
           </li>
 
-          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+          <li class="about navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
             <a href="#about" aria-label="about menu button">
               &#60;/About Me&#62;
             </a>
           </li>
 
-          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+          <li class="skills navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
             <a href="#skills" aria-label="skills menu button">
               &#60;/Skills&#62;
             </a>
           </li>
 
-          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+          <li class="projects navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
             <a href="#projects" aria-label="projects menu button">
               &#60;/Projects&#62;
             </a>
@@ -313,11 +315,25 @@ What are you doing here?! you sneaky developer...
                   </path>
                 </svg>
               </button>
-            </a>
+
+              <!-- this section will be used to direct download the portfolio instead of preview -->
+               
+              <!-- <div>        
+                <a href="./Resume.pdf" class="cta" download>
+                  <span class="hover-underline-animation"> Resume </span>
+                  <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg"
+                  width="30" height="10" viewBox="0 0 46 16">
+                  <path id="Path_10"
+                  d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  transform="translate(30)">
+                  </path>
+                  </svg>
+                </a></div> -->
+             </a>
             <br><br>
 
             <div class="text">Resume</div>
-            </button>
+
           </div>
 
           <div class="dp" data-aos="fade-up">
@@ -345,13 +361,13 @@ What are you doing here?! you sneaky developer...
             Tech Stack
           </h3>
           <ul class="tech-stack-wrapper">
-          
+
 
             <li class="tech-stack-box" data-aos="fade-up">
               <img src="./images/jslogo.png" alt="js skill" class="tech-stack-logo" />
               <span class="tooltip">JS</span>
             </li>
-            
+
 
             <li class="tech-stack-box" data-aos="fade-up">
               <img src="./images/gitlogo.png" alt="git skill" class="tech-stack-logo" />
@@ -367,7 +383,7 @@ What are you doing here?! you sneaky developer...
               <img src="./images/Python.png" alt="nextjs skill" class="tech-stack-logo" />
               <span class="tooltip">Python</span>
             </li>
-            
+
 
             <li class="tech-stack-box" data-aos="fade-up">
               <img src="./images/Linux.png" alt="photoshop skill" class="tech-stack-logo" />
@@ -393,7 +409,7 @@ What are you doing here?! you sneaky developer...
               <img src="./images/Jenkins.png" alt="photoshop skill" class="tech-stack-logo" />
               <span class="tooltip">JENKINS</span>
             </li>
-            
+
             <li class="tech-stack-box" data-aos="fade-up">
               <img src="./images/Bash.png" alt="adobe illustrator skill" class="tech-stack-logo" />
               <span class="tooltip">BASH</span>
@@ -538,7 +554,7 @@ What are you doing here?! you sneaky developer...
   </footer>
   <!-- footer ends here -->
 
-  <script src="code.js"></script>
+  <script src="script.js"></script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
@@ -597,6 +613,7 @@ What are you doing here?! you sneaky developer...
       'floating-chat.donateButton.text-color': '#fff'
     });
   </script>
+  <script src="main.js"></script>
 </body>
 
 </html>
